@@ -14,6 +14,8 @@ return [
     'descriptionMinError' => 'The description must be at least 10 characters.',
     'addressReqError' => 'The address field is required.',
     'dateReqError' => 'The date field is required.',
-    'dateValError' => 'The date must be pressent or future.'
+    'dateValError' => 'The date must be pressent or future.',
+    'updateConference' => 'Update',
+    'delete' => 'Delete'
 ];
 ?>

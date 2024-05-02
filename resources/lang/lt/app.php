@@ -14,6 +14,8 @@ return [
     'descriptionMinError' => 'Aprašymą privalo būti bent 10 raidžių ilgio.',
     'addressReqError' => 'Privaloma įvesti adresą.',
     'dateReqError' => 'Privaloma įvesti datą.',
-    'dateValError' => 'Data privalo būti šiandienos ar velesnė.'
+    'dateValError' => 'Data privalo būti šiandienos ar velesnė.',
+    'updateConference' => 'Atnaujinti',
+    'delete' => 'Ištrinti'
 ];
 ?>
