@@ -1,12 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="{{ mix('css/app.css') }}">
-</head>
-<body>
+@extends('layouts.app')
+@section('content')
+
     <div class="container d-flex justify-content-center">
         <div class="createConteiner w-50 d-flex flex-column border border-secondary pl-5 pt-2">
             <form action="{{ route('conferences.update', ['id' => $conference->id]) }}" method="POST" >
@@ -28,5 +22,4 @@
         </div>
         
     </div>
-</body>
-</html>
+@endsection('content')

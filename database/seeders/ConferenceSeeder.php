@@ -5,6 +5,8 @@ namespace Database\Seeders;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use App\Models\Conference;
+use Faker\Factory as Faker;
+
 
 class ConferenceSeeder extends Seeder
 {
@@ -13,28 +15,30 @@ class ConferenceSeeder extends Seeder
      */
     public function run()
     {
+        $faker = Faker::create();
+
         (new Conference())->insert([
             [
-                'title' => 'dasdas',
-                'description' => 'ahfsdkjasdhfkjabsdfjasbdh',
+                'title' => $faker->sentence,
+                'description' => $faker->paragraph,
                 'date' => now(),
                 'addres' => '123 Main Street, City, Country'
             ],
             [
-                'title' => '2pavadfionas',
-                'description' => 'Lorem::text()',
+                'title' => $faker->sentence,
+                'description' => $faker->paragraph,
                 'date' => now(),
                 'addres' => '123 Main Street, City, Country'
             ],
             [
-                'title' => '3pav',
-                'description' => 'valio',
+                'title' => $faker->sentence,
+                'description' => $faker->paragraph,
                 'date' => now(),
                 'addres' => '123 Main Street, City, Country'
             ],
             [
-                'title' => '4pav',
-                'description' => 'alio',
+                'title' => $faker->sentence,
+                'description' => $faker->paragraph,
                 'date' => now(),
                 'addres' => '123 Main Street, City, Country'
             ]

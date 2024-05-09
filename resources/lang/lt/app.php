@@ -2,7 +2,7 @@
 return [
     'address' => 'Adresas: ',
     'time' => 'Laikas: ',
-    'conference' => 'Konferencija',
+    'conference' => 'Konferencijos',
     'title' => 'Pavadinimas',
     'description' => 'Aprašymas',
     'address' => 'Adresas',
@@ -16,6 +16,14 @@ return [
     'dateReqError' => 'Privaloma įvesti datą.',
     'dateValError' => 'Data privalo būti šiandienos ar velesnė.',
     'updateConference' => 'Atnaujinti',
-    'delete' => 'Ištrinti'
+    'delete' => 'Ištrinti',
+    'confrences' => 'Konferencijos',
+    'login' => 'Prisijungti',
+    'logout' => 'Atsijungti',
+    'addConfrence' => 'Pridėti konferenciją',
+    'editConference' => 'Redaguoti konferenciją',
+    'eMail' => 'El. paštas',
+    'password' => 'Slaptažodis',
+    'login' => 'Prisijungti',
 ];
 ?>

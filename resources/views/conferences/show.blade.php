@@ -1,14 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="{{ mix('css/app.css') }}">
-    <script type="text/javascript" src="{{ mix('js/app.js') }}"></script>
 
-</head>
-<body>
+@extends('layouts.app')
+@section('content')
+
 <h1 class="d-flex justify-content-center m-5 pt=5">{{ __('app.conference') }}</h1>
         @foreach ($conferences as $conference)
         <div class="conteiner d-flex justify-content-center">
@@ -18,18 +11,20 @@
             <div>{{ __('app.address') }} {{ $conference->addres }}<br>
              {{ __('app.time') }}{{ $conference->date }} </div>
             </br>
+            @guest
+            @else
             <div class='conteiner d-flex mb-2'>
-                <a href="{{ route('conferences.edit', ['id' => $conference->id]) }}" class="btn btn-primary">Edit Conference</a>
+                <a href="{{ route('conferences.edit', ['id' => $conference->id]) }}" class="btn btn-primary">{{__('app.editConference')}}</a>
                 <form method="POST" action="{{ route('conferences.delete', ['id' => $conference->id]) }}">
                     @csrf
                     @method('DELETE')
                     <button class="btn btn-danger customMarginDelete">{{ __('app.delete')}}</button>
                 </form>
             </div>
+            @endguest
       
         </div>
     </div>
         <br></br>
         @endforeach
-</body>
-</html>
+ @endsection('content')
