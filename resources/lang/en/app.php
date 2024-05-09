@@ -1,8 +1,8 @@
 <?php
 return [
-    'address' => 'Address: ',
+    'address' => 'Address:',
     'time' => 'Time: ',
-    'conference' => 'Conference',
+    'conference' => 'Conferences',
     'title' => 'Title',
     'description' => 'Description',
     'address' => 'Address',
@@ -16,6 +16,14 @@ return [
     'dateReqError' => 'The date field is required.',
     'dateValError' => 'The date must be pressent or future.',
     'updateConference' => 'Update',
-    'delete' => 'Delete'
+    'delete' => 'Delete',
+    'confrences' => 'Conferences',
+    'login' => 'Login',
+    'logout' => 'Logout',
+    'addConfrence' => 'Add conference',
+    'editConference' => 'Edit conference',
+    'eMail' => 'E-mail',
+    'password' => 'Password',
+    'login' => 'Login',
 ];
 ?>
